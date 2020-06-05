@@ -1,4 +1,11 @@
-
+html{
+    font-family: 'PT Sans', sans-serif;
+    padding: 0
+    margin:0;
+}
+.main-container{
+    background-color: #EBEBDF;
+}
 .header-container{
     display: grid;
     grid-gap: 10px;
@@ -7,7 +14,7 @@
     color: white;
     height: 100px;
   }
-  .header-container h3{
+  .header-container h3, .footer-container h3{
    padding-top: 20px;   
    padding-left: 50px;
   }
@@ -24,17 +31,16 @@
   .main-container{
       margin-left: 2em;
       margin-right: 2em;
-      border: 1px black solid;
+      background-color: #EBEBDF;
   }
   .left-right-container{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 25% auto;
-    background-color: #6E777C;
+    background-color: #EBEBDF;
     color: white;
-    height: 405px;
-    
-    border: 1px black solid;
+
+    padding:0.5em;
   }
   .left-container{
     display: grid;
@@ -46,61 +52,112 @@
     grid-gap: 10px;
     grid-template-columns: 65% auto;
     grid-template-rows: 15% auto;
-    background-color: #6E777C;
+    background-color: #EBEBDF;
     color: white;
-    height: 405px;    
-    border: 1px black solid;
   }
   .item-a {
     grid-column-start: 1;
     grid-column-end:three;
     grid-row-start: 1;
     grid-row-end: 2;
+    background-color: #D9DEE4;
+    padding-left: 0;
+    color: black;
+    text-align: center;
   }
   .item-b {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end:  3;
+    background-color: #CC9552;
+    padding-left: 0;
+    color: black;
+    text-align: center;
+    
   }
   .item-c {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end:  3;
+    background-color: #CC9552;
+    padding-left: 0;
+    color: black;
+    text-align: center;
   }
   .portion-b{
     display: grid;
     grid-gap: 10px;
     grid-template-rows: 20% 20% auto;
-    background-color: #6E777C;
-    color: white;   
-    border: 1px black solid;
+    background-color: #CC9552;;
+    color: white;  
+    padding: 1em; 
   }
+  .portion-ba{
+      border: 1px solid #707070;
+      background-color: #EBEBDF;
+      color: black;
+  }
+  .portion-bb{
+    border: 1px solid #707070;
+    background-color: #EBEBDF;
+    color: black;
+}
   .portion-c{
     display: grid;
     grid-gap: 10px;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
-    background-color: #6E777C;
-    color: white;   
-    border: 1px black solid;
+    background-color: #CC9552;
+    color: white;  
+    padding: 1em; 
+  }
+  .portion-c p{
+      margin:0;
   }
   .portion-ca{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end:  2;
+    border: 1px solid #707070;
+    background-color: #EBEBDF;
+    color: black;
+    padding: 3em;
+    margin:0em;
+    
   }
   .portion-cb{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end:  3;
+
   }
   .portion-cc{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
-    grid-row-end:  3;
+    grid-row-end:  3;    
+   
   }
+  .portion-cb,.portion-cc{
+    padding: 1em;   
+    border: 1.3px solid #707070;
+    border-radius: 50%;
+    height: 5em;
+    margin-top:2em;
+  }
+  .portion-cb p,.portion-cc p{
+      margin-top: 2em;
+  }
+.room-pic{
+    height: 20em;
+    margin-left: 1em;
+    margin-top: 0.5em;
+}
+.below-image-p{
+    margin-top: 0;
+    color: black;
+}
